@@ -1,7 +1,7 @@
 # Modelo UML Final
 
 ```mermaid
-classDia4gram
+classDiagram
     direction TB
 
     class Exportable {
@@ -37,11 +37,11 @@ classDia4gram
         -_precio_base: float
         -_stock_cantidad: float
         -_habilitado: bool
-        -_unidad_venta: UnidadMedida
+        -_unidad_venta: UnidadMedida | None
         -_clasificaciones: list
         +nombre str
         +precio_base float
-        +unidad_venta UnidadMedida
+        +unidad_venta UnidadMedida | None
         +disponible bool
         +precio_publicado str
         +habilitar() None
